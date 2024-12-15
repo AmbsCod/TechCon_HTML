@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - TechCon 2024</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Contact Information -->
+        <section>
+            <h2>Get in Touch</h2>
+            <p>We’re here to help. Reach out to us through any of the following channels:</p>
+            <ul>
+                <li>Email: <a href="mailto:info@techcon2024.com">info@techcon2024.com</a></li>
+                <li>
+                    Follow us on:
+                    <a href="https://twitter.com/techcon2024" target="_blank">Twitter</a>,
+                    <a href="https://facebook.com/techcon2024" target="_blank">Facebook</a>,
+                    <a href="https://linkedin.com/company/techcon2024" target="_blank">LinkedIn</a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Google Maps Embed -->
+        <section>
+            <h2>Venue Location</h2>
+            <div>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8354345092334!2d-122.41941558468178!3d37.774929779759566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064d2ae2957%3A0x9e90c810a2c3b1!2sMoscone%20Center!5e0!3m2!1sen!2sus!4v1699989653314!5m2!1sen!2sus"
+                    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+
+        <!-- Contact Us Form -->
+        <section>
+            <h2>Contact Us</h2>
+            <form action="submit_contact.php" method="post">
+                <!-- Name Field -->
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <!-- Email Field -->
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <!-- Message Field -->
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <!-- Submit Button -->
+                <div>
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 TechCon. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
